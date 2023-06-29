@@ -24,3 +24,45 @@
 </html>
 </body>
 </html>
+
+
+
+
+
+
+
+def convert_millimeters_to(length, unit):
+    # Convert length to meters
+    meters = length / 1000
+
+    if unit == "cm":
+        return meters * 100
+    elif unit == "dm":
+        return meters * 10
+    elif unit == "m":
+        return meters
+    elif unit == "dam":
+        return meters / 10
+    elif unit == "hm":
+        return meters / 100
+    elif unit == "km":
+        return meters / 1000
+    else:
+        return "Invalid unit"
+        # Test the function
+millimeters = 1500
+centimeters = convert_millimeters_to(millimeters, "cm")
+decimeters = convert_millimeters_to(millimeters, "dm")
+meters = convert_millimeters_to(millimeters, "m")
+decameters = convert_millimeters_to(millimeters, "dam")
+hectometers = convert_millimeters_to(millimeters, "hm")
+kilometers = convert_millimeters_to(millimeters, "km")
+
+# Print the results
+print(f"{millimeters} millimeters equals:")
+print(f"{centimeters} centimeters")
+print(f"{decimeters} decimeters")
+print(f"{meters} meters")
+print(f"{decameters} decameters")
+print(f"{hectometers} hectometers")
+print(f"{kilometers} kilometers")
