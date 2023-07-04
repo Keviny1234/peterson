@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF 05 - Questão Pratica 10</title>
+    <title>PDF 05 - Questão Prática 10</title>
 </head>
 <body>
-    
+    <h3> solteiro e nascimennto </h3>
+
+    <script>
+        let nascimennto = parseInt(prompt("Digite seu ano de nascimento."))
+        let status = (prompt("Digite seu status de relacionamento casado ou solteiro?"))
+        window.alert(`O usuario é solteiro? ${status == "solteiro"}`)
+        window.alert(`O usuario é maior de Idade? ${nascimennto > 1900 && nascimennto < 2005}`)
+        
+    </script>
 </body>
 </html>
