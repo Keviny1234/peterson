@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF 06 - Exercicio Prático 03</title>
+</head>
+<body>
+    <h3>Equação do 2 grau</h3>
+    
+    <script>
+        let a = parseInt(prompt("Digite valor de A:"))
+        let b = parseInt(prompt("Digite valor de B:"))
+        let c = parseInt(prompt("Digite valor de C:"))
+        let delta = b**2-4*a*c
+        let x1 = (-b+Math.sqrt(delta))/2
+        let x2 = (-b-Math.sqrt(delta))/2
+
+        if(delta < 0){
+            window.alert("Delta menor que 0. Portanto não existem raizes reais")
+        }else{
+            document.write(`X1: ${x1} e X2: ${x2}`)
+        }
+    </script>
+</body>
+</html>

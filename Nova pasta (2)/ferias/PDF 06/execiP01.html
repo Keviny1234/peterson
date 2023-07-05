@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF 06 - Exercicio Prático 01</title>
+</head>
+<body>
+    <h3>Média do aluno</h3>
+
+    <script>
+        let nota1 = parseInt(prompt("Digite primeira nota (de 0 a 10):"))
+        let nota2 = parseInt(prompt("Digite segunda nota (de 0 a 10):"))
+        let nota3 = parseInt(prompt("Digite terceira nota (de 0 a 10):"))
+        let nota4 = parseInt(prompt("Digite quarta nota (de 0 a 10):"))
+        let media = (nota1+nota2+nota3+nota4)/4
+
+        if(media >= 7){
+            window.alert(`Parabens! você foi aprovado. Media: ${media}`)
+        }else{
+            document.write(`Ainda não foi dessa vez. Media: ${media}`)
+        }
+    </script>
+</body>
+</html>
