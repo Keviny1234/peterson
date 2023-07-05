@@ -6,6 +6,26 @@
     <title>PDF 06 - Exercicio Prático 07</title>
 </head>
 <body>
-    
+    <script>
+        let peso = prompt("Digite seu peso:")
+        let altura = prompt("Digite sua altura:")
+        let imc = peso/(altura**2) 
+
+        if(imc < 18.5){
+            document.write(`Com IMC = ${imc} você está: Abaixo do peso`) 
+        } else
+        if(imc  > 18.6 && imc < 24.9){
+            document.write(`Com IMC = ${imc} você está: Peso normal`) 
+        }else
+        if(imc > 25 && imc < 29.9){
+            document.write(`Com IMC = ${imc} você está: Sobrepeso`) 
+        }else
+        if(imc > 30 && imc < 34.9){
+            document.write(`Com IMC = ${imc} você está: Obesidade`) 
+        }else
+        if(imc > 35){
+            document.write(`Com IMC = ${imc} você está: Obesidade extrema`) 
+        }
+    </script>
 </body>
 </html>
