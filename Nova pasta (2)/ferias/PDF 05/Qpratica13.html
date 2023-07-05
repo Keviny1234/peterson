@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF 05 - Questão Prática 13</title>
+</head>
+<body>
+    <h3>Calcular IMC</h3>
+
+    <Script>
+        let peso = 90
+        let altura = 1.75**2
+        let soma = peso/altura 
+        document.write(`Abaixo do peso? ${soma < 18.5} <br>`) 
+        document.write(`Peso normal? ${soma > 18.6 && soma < 24.9} <br>`) 
+        document.write(`Sobrepeso? ${soma > 25 && soma < 29.9} <br>`) 
+        document.write(`obesidade? ${soma > 30 && soma < 34.9} <br>`) 
+        document.write(`obesidade extrema? ${soma > 35} <br>`) 
+
+    </Script>
+</body>
+</html>
