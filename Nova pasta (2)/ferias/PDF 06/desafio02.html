@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF 06 - Desafio 02</title>
+    <title>Desafio 02 - PDF 06</title>
 </head>
 <body>
-    
+    <h3>Números em ordem decrescente</h3>
+    <script>  
+let n1 = parseInt(prompt("Digite o primeiro valor "))
+let n2 = parseInt(prompt("Digite o segundo valor "))
+let n3 = parseInt(prompt("Digite o terceiro valor "))
+
+
+if (n1 >= n2 && n1 >= n3) {
+    if (n2 >= n3) {
+        window.alert(n1 + ", " + n2 + ", " + n3);
+    } else {
+        window.alert(n1 + ", " + n3 + ", " + n2);
+    }
+} else if (n2 >= n1 && n2 >= n3) {
+    if (n1 >= n3) {
+        window.alert(n2 + ", " + n1 + ", " + n3);
+    } else {
+        window.alert(n2 + ", " + n3 + ", " + n1);
+    }
+} else {
+    if (n1 >= n2) {
+        window.alert(n3 + ", " + n1 + ", " + n2);
+    } else {
+        window.alert(n3 + ", " + n2 + ", " + n1);
+    }
+}
+</script>
 </body>
 </html>
