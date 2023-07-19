@@ -8,7 +8,88 @@
 <body>
     <h3> </h3>
     <script>
-        
-    </script>
+        function calcularResultado(numero1, numero2, operacao) {
+      switch (operacao) {
+        case '+':
+          return numero1 + numero2;
+        case '-':
+          return numero1 - numero2;
+        case '*':
+          return numero1 * numero2;
+        case '/':
+          return numero1 / numero2;
+        case 'exit':
+          return 'exit';
+        default:
+          return "Operação inválida.";
+      }
+    }
+     let continuar = true;
+
+    while (continuar) {
+      const numero1 = parseFloat(prompt("Digite o primeiro número (ou 'exit' para sair):"));
+
+      if (isNaN(numero1)) {
+        alert("Número inválido. Tente novamente.");
+        continue;
+      }
+
+      if (numero1 === 'exit') {
+        alert("Programa encerrado. Até logo!");
+        break;
+      }
+
+      const numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+      if (isNaN(numero2)) {
+        alert("Número inválido. Tente novamente.");
+        continue;
+      }
+
+      const operacao = prompt("Digite o símbolo da operação aritmética (+, -, *, /) ou 'exit' para sair:");
+
+      const resultado = calcularResultado(numero1, numero2, operacao);
+
+      if (resultado === 'exit') {
+        alert("Programa encerrado. Até logo!");
+        break;
+      } else {
+        alert(`O resultado da operação é: ${resultado}`);
+      }
+    }
+    let continuar = true;
+
+while (continuar) {
+  const numero1 = parseFloat(prompt("Digite o primeiro número (ou 'exit' para sair):"));
+
+  if (isNaN(numero1)) {
+    alert("Número inválido. Tente novamente.");
+    continue;
+  }
+
+  if (numero1 === 'exit') {
+    alert("Programa encerrado. Até logo!");
+    break;
+  }
+
+  const numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+if (isNaN(numero2)) {
+  alert("Número inválido. Tente novamente.");
+  continue;
+}
+
+const operacao = prompt("Digite o símbolo da operação aritmética (+, -, *, /) ou 'exit' para sair:");
+
+const resultado = calcularResultado(numero1, numero2, operacao);
+
+if (resultado === 'exit') {
+  alert("Programa encerrado. Até logo!");
+  break;
+} else {
+  alert(`O resultado da operação é: ${resultado}`);
+}
+}
+  </script>
 </body>
 </html>
