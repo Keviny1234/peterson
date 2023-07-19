@@ -9,11 +9,59 @@
     <h3>Repetiçâo for</h3>
 
      <script> 
-     let flag = 0
-     while (flag )
-     for (let i = 20; i = 10; i++){
-        document.write("i = " + i)
-     }
+     let n1 = parseInt(prompt("Digite um valor:"))
+     let n2 = parseInt(prompt("Digite um valor:"))
+     let n3 = parseInt(prompt("Digite um valor:"))
+     let n4 = parseInt(prompt("Digite um valor:"))
+     let n5 = parseInt(prompt("Digite um valor:"))
+
+    let positivo = 0;
+    let negativo = 0;
+    let zero = 0;
+
+    if (n1 > 0) {
+      positivo++;
+    } else if (n1 < 0) {
+      negativo++;
+    } else {
+      zero++;
+    }
+
+    if (n2 > 0) {
+      positivo++;
+    } else if (n2 < 0) {
+      negativo++;
+    } else {
+      zero++;
+    }
+    if (n3 > 0) {
+      positivo++;
+    } else if (n3 < 0) {
+      negativo++;
+    } else {
+      zero++;
+    }
+
+    if (n4 > 0) {
+      positivo++;
+    } else if (n4 < 0) {
+      negativo++;
+    } else {
+      zero++;
+    }
+    if (n5 > 0) {
+      positivo++;
+    } else if (n5 < 0) {
+      negativo++;
+    } else {
+      zero++;
+    }
+
+    window.alert(`Número de valores positivos: ${positivo}`);
+    window.alert(`Número de valores negativos: ${negativo}`);
+    window.alert(`número de zeros: ${zero}`);
+
+
      </script>
     
 </body>
