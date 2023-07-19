@@ -8,7 +8,20 @@
 <body>
     <h3> </h3>
     <script>
-        
-    </script>
+        function calcularAreaTrapezio(base1, base2, altura) {
+          return ((base1 + base2) * altura) / 2;
+        }
+    
+        // Solicitar ao usuário os valores das bases e altura
+        const base1 = parseFloat(prompt("Digite o comprimento da primeira base:"));
+        const base2 = parseFloat(prompt("Digite o comprimento da segunda base:"));
+        const altura = parseFloat(prompt("Digite a altura do trapézio:"));
+    
+        // Calcular a área do trapézio
+        const area = calcularAreaTrapezio(base1, base2, altura);
+    
+        // Mostrar o resultado
+        alert(`A área do trapézio é: ${area}`);
+      </script>
 </body>
 </html>
