@@ -9,11 +9,24 @@
     <h3>Repetiçâo for</h3>
 
      <script> 
-     let flag = 0
-     while (flag )
-     for (let i = 20; i = 10; i++){
-        document.write("i = " + i)
-     }
+     function calculateSquare(num) {
+      return num * num;
+    }
+
+    function calculateCube(num) {
+      return num * num * num;
+    }
+
+    document.write("<table>");
+    document.write("<tr><th>Number</th><th>Square</th><th>Cube</th></tr>");
+
+    for (let i = 0; i <= 10; i++) {
+      const square = calculateSquare(i);
+      const cube = calculateCube(i);
+      document.write(`<tr><td>${i}</td><td>${square}</td><td>${cube}</td></tr>`);
+    }
+
+    document.write("</table>");
      </script>
     
 </body>
