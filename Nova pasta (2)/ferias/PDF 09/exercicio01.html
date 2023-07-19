@@ -8,7 +8,16 @@
 <body>
     <h3> </h3>
     <script>
-        
-    </script>
+
+        const salariofixo = parseFloat(prompt("Insira o salário fixo do funcionário:"));
+        const valorvenda = parseFloat(prompt("Digite o valor das vendas:"));
+    
+        const comissão = 0.04 * valorvenda;
+        const salariofinal = salariofixo + comissão;
+    
+        window.alert(`Comissão: R$${comissão}`);
+        window.alert(`Salário final: R$${salariofinal}`);
+
+      </script>
 </body>
 </html>
