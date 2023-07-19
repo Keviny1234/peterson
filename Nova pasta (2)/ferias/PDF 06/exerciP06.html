@@ -6,10 +6,39 @@
     <title>PDF 06 - Exercicio Prático 06</title>
 </head>
 <body>
-    <h3></h3>
+    <p>O código começa definindo a variável note como 5. <br>
+        Em seguida, ele passa por uma série de condições usando instruções if, <br>
+        elif e else para determinar qual mensagem imprimir com base no valor de note. <br>
+        Se o valor da nota for menor que 7, imprime "Regular". <br>
+        Se o valor da nota for exatamente 9, imprime "Bom". <br>
+        Se nenhuma das condições acima for atendida, ele imprimirá "Excelente".
+    </p>
 
+        <p>
+            Como não há tratamento específico para valores negativos de nota, o programa <br>
+            executaria o bloco else e imprimiria "Excelente".
+        </p>
+
+        <p>
+            Novamente, não há manipulação específica para valores maiores que 9, então <br>
+             o programa executaria o bloco else e imprimiria "Excelente".
+        </p>
     <script>
-        
+        if 0 <= note < 5:
+
+print("Bad")
+
+elif 5 <= note < 7:
+
+print("Regular")
+
+elif 7 <= note <= 9:
+
+print("Good")
+
+else:
+
+print("Excellent")
     </script>
 </body>
 </html>
