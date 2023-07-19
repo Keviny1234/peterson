@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF 06 - Desafio 01</title>
+    <title>Desafio 01 - PDF 06</title>
 </head>
 <body>
-    
+    <h3>Números em ordem decrescente</h3>
+    <script>  
+let n1 = parseInt(prompt("Digite a 1º idade:"))
+let n2 = parseInt(prompt("Digite a 2º idade:"))
+let n3 = parseInt(prompt("Digite a 3º idade:"))
+let n4 = parseInt(prompt("Digite a 4º idade:"))
+let n5 = parseInt(prompt("Digite a 5º idade:"))
+
+
+let maioridade = n1;
+
+if (n2 > maioridade) {
+    maioridade = n2;
+}
+
+if (n3 > maioridade) {
+    maioridade = n3;
+}
+
+if (n4 > maioridade) {
+    maioridade = n4;
+}
+
+if (n5 > maioridade) {
+    maioridade = n5;
+}
+
+let menoridade = n1;
+
+if (n2 < menoridade) {
+    menoridade = n2;
+}
+
+if (n3 < menoridade) {
+    menoridade = n3;
+}
+
+if (n4 < menoridade) {
+    menoridade = n4;
+}
+
+if (n5 < menoridade) {
+    menoridade = n5;
+}
+
+window.alert(`maior idade:  ${maioridade}`);
+window.alert(`menor idade:  ${menoridade}`);
+
+</script>
 </body>
 </html>
