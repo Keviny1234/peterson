@@ -8,7 +8,50 @@
 <body>
     <h3> </h3>
     <script>
-        
+     function lancarMoeda() {
+      const opcoes = ["cara", "coroa"];
+      const indiceAleatorio = Math.floor(Math.random() * opcoes.length);
+      return opcoes[indiceAleatorio];
+    }
+
+    function jogarNovamente() {
+      const escolha = prompt("Deseja jogar novamente? (sim/não)").toLowerCase();
+      return escolha === "sim";
+    }
+    let jogar = true;
+    let pontos = 0;
+
+    while (jogar) {
+      const escolhaUsuario = prompt("Escolha 'cara', 'coroa' ou 'sair':").toLowerCase();
+
+      if (escolhaUsuario === "sair") {
+        alert("Você escolheu sair do jogo. Até logo!");
+        break;
+      }
+
+      if (escolhaUsuario !== "cara" && escolhaUsuario !== "coroa") {
+        alert("Escolha inválida! Por favor, escolha 'cara', 'coroa' ou 'sair'.");
+        continue;
+      }
+
+      const resultadoMoeda = lancarMoeda();
+      alert("A moeda está sendo lançada...");
+      setTimeout(function() {
+        alert(`Você escolheu ${escolhaUsuario}. A moeda caiu em ${resultadoMoeda}.`);
+
+        if (escolhaUsuario === resultadoMoeda) {
+          alert("Parabéns! Você ganhou!");
+          pontos++;
+        } else {
+          alert("Desculpe, você perdeu. Tente novamente!");
+          pontos--;
+        }
+
+        alert(`Pontuação atual: ${pontos}`);
+
+        jogar = jogarNovamente();
+      }, 10); 
+    }
     </script>
 </body>
 </html>
